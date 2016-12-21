@@ -39,6 +39,7 @@ https://gems.ruby-china.org
 由于 OS X 系统的不同，此处的指令也是有些变化:
 
 OS X 10.11之前系统的安装 CocoaPods 指令： $ sudo gem install cocoapods
+
 OS X 10.11以后系统的安装 CocoaPods 指令： $ sudo gem install -n /usr/local/bin cocoa pods
 
 三、配置
@@ -119,9 +120,6 @@ end
 六、参考文档
 
 1、http://www.jianshu.com/p/6d8604f0b94c
-
 2、http://www.jianshu.com/p/0cea9006c0cb
-
 3、http://www.jianshu.com/p/fe0bb6b12f9d
-
 4、https://biezhi.me/2016/03/26/cocoaPods-installation-encountered-pit/
