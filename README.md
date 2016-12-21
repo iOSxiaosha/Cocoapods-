@@ -28,6 +28,7 @@ gem sources --remove https://rubygems.org/
 gem sources --add https://gems.ruby-china.org
 
 再次检查此时的 ruby 源：（ 已经变成了 ruby-china 源 ）
+
 *** CURRENT SOURCES ***
 https://gems.ruby-china.org
 
@@ -36,6 +37,7 @@ https://gems.ruby-china.org
 二、安装Cocoapods
 
 由于 OS X 系统的不同，此处的指令也是有些变化:
+
 OS X 10.11之前系统的安装 CocoaPods 指令： $ sudo gem install cocoapods
 OS X 10.11以后系统的安装 CocoaPods 指令： $ sudo gem install -n /usr/local/bin cocoa pods
 
@@ -49,6 +51,7 @@ pod search 'AFNetworking'
 2、安装成功后，执行pod setup命令
 
 这个过程比较慢，需要等一段时间
+
 注： pod setup 是Cocoapods将它的信息下载到 ~/.cocoapods/repos 目录下。即使在安装时不执行此命令，在初次执行 pod install 命令时，系统也会自动执行 pod setup
 
 3、查看setup是否执行成功
