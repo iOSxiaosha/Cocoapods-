@@ -116,6 +116,9 @@ end
 六、参考文档
 
 1、http://www.jianshu.com/p/6d8604f0b94c
+
 2、http://www.jianshu.com/p/0cea9006c0cb
+
 3、http://www.jianshu.com/p/fe0bb6b12f9d
+
 4、https://biezhi.me/2016/03/26/cocoaPods-installation-encountered-pit/
