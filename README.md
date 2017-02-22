@@ -117,12 +117,28 @@ end
 
 4、以后打开工程的方式改为打开XXX.xcworkspace文件
 
-六、参考文档
+5、Podfile.lock文件作用：多用于多人开发中，保持团队内使用的依赖库版本一致。
+
+补充：执行完pod install命令后，会生成Podfile.lock文件，它记录下了当时最新Pods依赖库的版本。
+
+六、使用Podfile管理Pods依赖库版本
+
+再引入依赖库时，需要显示或隐式注明引用的依赖库版本，具体写法和表示含义如下：
+
+pod 'AFNetworking'      //不显式指定依赖库版本，表示每次都获取最新版本
+pod 'AFNetworking', '2.0'    //只使用2.0版本
+pod 'AFNetworking', '> 2.0'    //使用高于2.0的版本
+pod 'AFNetworking', '>= 2.0'    //使用大于或等于2.0的版本
+pod 'AFNetworking', '< 2.0'    //使用小于2.0的版本
+pod 'AFNetworking', '<= 2.0'    //使用小于或等于2.0的版本
+pod 'AFNetworking', '~> 0.1.2'    //使用大于等于0.1.2但小于0.2的版本
+pod 'AFNetworking', '~> 0.1'    //使用大于等于0.1但小于1.0的版本
+pod 'AFNetworking', '~> 0'    //高于0的版本，写这个限制和什么都不写是一个效果，都表示使用最新版本
+
+七、参考文档
 
 1、http://www.jianshu.com/p/6d8604f0b94c
-
 2、http://www.jianshu.com/p/0cea9006c0cb
-
 3、http://www.jianshu.com/p/fe0bb6b12f9d
-
 4、https://biezhi.me/2016/03/26/cocoaPods-installation-encountered-pit/
+5、http://m.blog.csdn.net/article/details?id=45174071
